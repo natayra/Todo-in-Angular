@@ -5,7 +5,8 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
   selector: 'app-todo-item',
   template: `
   <div class="todo-item">
-  
+    <input type="checkbox"/>
+    {{ item.title }}
 
     <button class="btn btn-red" (click)="removeItem()">
       remove
